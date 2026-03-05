@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "almanac": {
+      "command": "node",
+      "args": ["dist/index.js"],
+      "cwd": "/absolute/path/to/almanac/packages/mcp-server",
+      "env": {}
+    }
+  }
+}

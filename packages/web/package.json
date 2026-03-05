@@ -1,0 +1,38 @@
+{
+  "name": "@almanac/web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Web interface for browsing Lintile's Almanac",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^14.2.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "gray-matter": "^4.0.3",
+    "unified": "^11.0.4",
+    "remark": "^15.0.1",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.0",
+    "remark-gfm": "^4.0.0",
+    "rehype-highlight": "^7.0.0",
+    "rehype-slug": "^6.0.0",
+    "rehype-autolink-headings": "^7.1.0",
+    "rehype-stringify": "^10.0.0",
+    "unist-util-visit": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.3.3",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "@tailwindcss/typography": "^0.5.13"
+  }
+}
