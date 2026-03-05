@@ -1,0 +1,18 @@
+{
+  "name": "@almanac/mathematics",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Pure and applied mathematics fundamentals",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit",
+    "lint": "echo 'Linting mathematics...'"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}

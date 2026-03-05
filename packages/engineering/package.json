@@ -1,0 +1,18 @@
+{
+  "name": "@almanac/engineering",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Engineering principles and design patterns",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit",
+    "lint": "echo 'Linting engineering...'"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}

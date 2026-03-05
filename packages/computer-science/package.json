@@ -1,0 +1,18 @@
+{
+  "name": "@almanac/computer-science",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Computer science fundamentals and advanced topics",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit",
+    "lint": "echo 'Linting computer-science...'"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
