@@ -1,0 +1,7 @@
+{
+  "buildCommand": "npm install --prefix packages/web && cd packages/web && npm run build",
+  "devCommand": "cd packages/web && npm run dev",
+  "installCommand": "echo 'Install handled in build command'",
+  "outputDirectory": "packages/web/.next",
+  "framework": null
+}
