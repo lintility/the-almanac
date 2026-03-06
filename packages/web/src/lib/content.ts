@@ -2,7 +2,11 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 
-const CONTENT_ROOT = path.join(process.cwd(), '../../packages')
+// In production, content is copied to the web package's content directory
+// In development, fall back to reading from sibling packages
+const CONTENT_ROOT = process.env.NODE_ENV === 'production'
+  ? path.join(process.cwd(), 'content')
+  : path.join(process.cwd(), '../../packages')
 
 export interface ArticleMetadata {
   title: string
@@ -63,7 +67,11 @@ const CHAPTER_INFO: Record<string, { title: string; description: string }> = {
 }
 
 function getChapterContentDir(chapterSlug: string): string {
-  return path.join(CONTENT_ROOT, chapterSlug, 'content')
+  // In production, content is flat in the copied directory
+  // In development, it's in the sibling packages with a content subdirectory
+  return process.env.NODE_ENV === 'production'
+    ? path.join(CONTENT_ROOT, chapterSlug)
+    : path.join(CONTENT_ROOT, chapterSlug, 'content')
 }
 
 export function getAllChapters(): Chapter[] {

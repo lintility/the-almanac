@@ -12,6 +12,9 @@ out
 build
 dist
 
+# Copied content from sibling packages
+content
+
 # Production
 *.log
 npm-debug.log*
